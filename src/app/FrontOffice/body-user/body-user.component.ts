@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { UserService } from '../Services/user.service';
 
+
 @Component({
   selector: 'app-body-user',
   templateUrl: './body-user.component.html',
@@ -30,4 +31,5 @@ export class BodyUserComponent {
       }
     });
   }
+
 }

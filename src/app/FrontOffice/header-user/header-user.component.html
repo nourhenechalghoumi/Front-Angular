@@ -11,12 +11,14 @@
     })();
     </script>
     <!--End of Tawk.to Script-->
+
  <!-- Navigation Bar-->
  <div class="tagline hidden-md">
     <div class="container">
         <div class="float-left">
             <div class="phone">
                 <i class="fas fa-phone"></i> +216 58 426 36
+                <i class="fas fa-phone"></i> 
             </div>
         </div>
         <div class="float-right">
@@ -40,6 +42,12 @@
                 <img src="/assets/images/logo.png" alt="missing_logo" height="20">
             </a>
         </div> -->
+
+        <div>
+            <a href="index-2.html" class="logo">
+                <img src="/assets/images/logo.png" alt="missing_logo" height="20">
+            </a>
+        </div>
         <!-- End Logo container-->
         <div class="menu-extras">
             <div class="menu-item">
@@ -74,6 +82,17 @@
                 <li class="has-submenu">
                     <a href="javascript:void(0)">About</a><span class="menu-arrow"></span>
                     <ul class="submenu">    
+
+            <!-- Navigation Menu-->
+            <ul class="navigation-menu">
+                <li class="has-submenu">
+                    <a routerLink="/user/home" routerLinkActive="active" >Home</a><span class="menu-arrow"></span>
+                   
+                </li>
+
+                <li class="has-submenu">
+                    <a href="javascript:void(0)">About</a><span class="menu-arrow"></span>
+                    <ul class="submenu">
                         <li><a href="about.html">About</a></li>
                         <li><a href="history.html">History</a></li>
                         <li class="has-submenu"><a href="javascript:void(0)">Services</a><span class="submenu-arrow"></span>
@@ -146,6 +165,7 @@
                         <li>
                             <ul>
                                 <li><a href="elements-accordions.html"><b class="mdi mdi-chevron-right"></b> Accordion</a></li>
+                                <li><a routerLink="reservation"><b class="mdi mdi-chevron-right"></b> Reservation</a></li>
                                 <li><a href="elements-alert.html"><b class="mdi mdi-chevron-right"></b> Alert</a></li>
                                 <li><a href="elements-button.html"><b class="mdi mdi-chevron-right"></b> Button</a></li>
                                 <li><a href="elements-blockquote.html"><b class="mdi mdi-chevron-right"></b> Blockquote</a></li>
@@ -160,6 +180,10 @@
                             <ul>
                                 <li><a href="elements-dropdown.html"><b class="mdi mdi-chevron-right"></b> Dropdown</a></li>
                                 <li><a href="elements-funfactors.html"><b class="mdi mdi-chevron-right"></b> Fun Factors</a></li>
+
+
+                                <li><a routerlink="reservation"><b class="mdi mdi-chevron-right"></b> Reservation</a></li>
+
                                 <li><a href="elements-grid-structure.html"><b class="mdi mdi-chevron-right"></b> Grid Structure</a></li>
                                 <li><a href="elements-gallery.html"><b class="mdi mdi-chevron-right"></b> Gallery</a></li>
                                 <li><a href="elements-highlights.html"><b class="mdi mdi-chevron-right"></b> Highlights</a></li>
@@ -192,6 +216,8 @@
                         </li>
                     </ul>
                 </li>
+
+                <i class="fa-regular fa-user" style="color: #f0530f; margin-top: 20px;"></i>
 
                 <li class="dropdown d-none d-md-inline-block">
                     <a class="nav-link dropdown-toggle arrow-none" data-toggle="dropdown" href="#" role="button"

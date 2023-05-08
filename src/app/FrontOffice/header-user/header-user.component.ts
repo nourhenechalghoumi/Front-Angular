@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { StorageService } from '../Services/storage.service';
 import { AuthService } from '../Services/auth.service';
 import { EventBusService } from '../_shared/event-bus.service';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-header-user',
@@ -41,7 +42,7 @@ export class HeaderUserComponent implements OnInit {
 
 
 
-  
+
   logout(): void {
     this.authService.logout().subscribe({
       next: res => {
@@ -55,4 +56,8 @@ export class HeaderUserComponent implements OnInit {
       }
     });
   }
+}
+
+export class HeaderUserComponent {
+
 }

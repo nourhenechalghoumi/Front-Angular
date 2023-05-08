@@ -53,6 +53,24 @@ const routes: Routes = [
       { path: '', redirectTo: 'home', pathMatch: 'full' },
     ],
   },
+
+import { OrdersComponent } from './BackOffice/components/order.component';
+import { HttpClientModule } from '@angular/common/http';
+import { Order1Component } from './FrontOffice/Components1/order/orders.component1';
+import { NotFoundComponentComponent } from './FrontOffice/not-found-component/not-found-component.component';
+import { WelcomePageComponent } from './FrontOffice/welcome-page/welcome-page.component';
+const routes: Routes = [
+ 
+  {
+
+    path: 'user',
+    component: AllTemplateUserComponent,
+    children: [
+    {path : 'home',
+    component : BodyUserComponent},
+    ]
+  },
+
   {
     path: 'admin',
     component: AllTemplateAdminComponent,
@@ -86,4 +104,35 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 
+      {path : 'home',
+    component : BodyAdminComponent}
+    ]
+  },
+  {
+    path: 'orders',
+    component: OrdersComponent,
+    children: [
+      {path : 'home',
+    component : BodyUserComponent},
+    ]
+    
+  },
+  {
+    path: 'client',
+    component: Order1Component,
+    children: [
+      {path : 'home',
+    component : BodyUserComponent}
+    ]
+  },
+  { path: 'welcome', component: WelcomePageComponent },
+  { path: '**', component: NotFoundComponentComponent },
+
+
+
+];
+@NgModule({
+  imports: [RouterModule.forRoot(routes),HttpClientModule],
+  exports: [RouterModule]
+})
 export class AppRoutingModule { }

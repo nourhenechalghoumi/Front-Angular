@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { UserService } from '../Services/user.service';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-home',
@@ -30,4 +31,6 @@ export class HomeComponent implements OnInit {
       }
     });
   }
+export class HomeComponent {
+
 }

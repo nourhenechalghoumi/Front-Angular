@@ -1,12 +1,17 @@
+
 import { Component, OnInit } from '@angular/core';
 import { StorageService } from './FrontOffice/Services/storage.service';
 import { AuthService } from './FrontOffice/Services/auth.service';
 import { EventBusService } from './FrontOffice/_shared/event-bus.service';
 import { Subscription } from 'rxjs';
 
+import { Component } from '@angular/core';
+
+
 @Component({
   selector: 'body',
   template: '<router-outlet></router-outlet>',
+
   //styleUrls: ['./app.component.css']
 })
 
@@ -57,4 +62,10 @@ export class AppComponent  implements OnInit{
     });
   }
  // styleUrls: ['./app.component.css']
+
+ // styleUrls: ['./app.component.css']
+})
+export class AppComponent {
+  title = 'FrontWebProject';
+
 }
