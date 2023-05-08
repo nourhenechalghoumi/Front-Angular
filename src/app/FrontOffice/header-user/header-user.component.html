@@ -1,8 +1,23 @@
+ <!--Start of Tawk.to Script-->
+ <script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/6453d4106a9aad4bc578ebd5/1gvjn8ogb';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+    </script>
+    <!--End of Tawk.to Script-->
+
  <!-- Navigation Bar-->
  <div class="tagline hidden-md">
     <div class="container">
         <div class="float-left">
             <div class="phone">
+                <i class="fas fa-phone"></i> +216 58 426 36
                 <i class="fas fa-phone"></i> 
             </div>
         </div>
@@ -22,6 +37,12 @@
   <header id="topnav" class="defaultscroll fixed-top navbar-sticky sticky" style="position: sticky;">
     <div class="container">
         <!-- Logo container-->
+        <!-- <div>
+            <a href="index-2.html" class="logo">
+                <img src="/assets/images/logo.png" alt="missing_logo" height="20">
+            </a>
+        </div> -->
+
         <div>
             <a href="index-2.html" class="logo">
                 <img src="/assets/images/logo.png" alt="missing_logo" height="20">
@@ -43,6 +64,25 @@
         </div>
 
         <div id="navigation">
+            <!-- Navigation Menu // Login & Register-->
+            <ul class="navigation-menu">
+                <li class="">
+                    <li class="has-submenu" style="margin-right: 150px;">
+                        <a  *ngIf="connectedUser"><b  class="text-left" style="color: blue;"><span style="color: green; font-size: medium;">⦿ </span>{{user.username}}</b></a>
+                    <li class="has-submenu">
+                        <a  *ngIf="!connectedUser" routerLink="/login" ><b>Login</b></a></li>
+                 <li class="has-submenu">
+                    <a *ngIf="!connectedUser" routerLink="/register"><b>Register</b></a>
+                    <li class="has-submenu">
+                        <a  *ngIf="connectedUser" routerLink="/logout"  (click)="logout()"><b>Logout</b></a>
+                        <li class="has-submenu">
+                            <a  *ngIf="connectedUser" routerLink="/user/UpdateAccount"><b>Update Account</b></a>
+                            
+
+                <li class="has-submenu">
+                    <a href="javascript:void(0)">About</a><span class="menu-arrow"></span>
+                    <ul class="submenu">    
+
             <!-- Navigation Menu-->
             <ul class="navigation-menu">
                 <li class="has-submenu">
@@ -124,6 +164,7 @@
                     <ul class="submenu megamenu">
                         <li>
                             <ul>
+                                <li><a href="elements-accordions.html"><b class="mdi mdi-chevron-right"></b> Accordion</a></li>
                                 <li><a routerLink="reservation"><b class="mdi mdi-chevron-right"></b> Reservation</a></li>
                                 <li><a href="elements-alert.html"><b class="mdi mdi-chevron-right"></b> Alert</a></li>
                                 <li><a href="elements-button.html"><b class="mdi mdi-chevron-right"></b> Button</a></li>
@@ -139,7 +180,10 @@
                             <ul>
                                 <li><a href="elements-dropdown.html"><b class="mdi mdi-chevron-right"></b> Dropdown</a></li>
                                 <li><a href="elements-funfactors.html"><b class="mdi mdi-chevron-right"></b> Fun Factors</a></li>
+
+
                                 <li><a routerlink="reservation"><b class="mdi mdi-chevron-right"></b> Reservation</a></li>
+
                                 <li><a href="elements-grid-structure.html"><b class="mdi mdi-chevron-right"></b> Grid Structure</a></li>
                                 <li><a href="elements-gallery.html"><b class="mdi mdi-chevron-right"></b> Gallery</a></li>
                                 <li><a href="elements-highlights.html"><b class="mdi mdi-chevron-right"></b> Highlights</a></li>
@@ -172,6 +216,7 @@
                         </li>
                     </ul>
                 </li>
+
                 <i class="fa-regular fa-user" style="color: #f0530f; margin-top: 20px;"></i>
 
                 <li class="dropdown d-none d-md-inline-block">
